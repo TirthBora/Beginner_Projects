@@ -1,0 +1,19 @@
+body{
+    font-family:Verdana;
+    text-align:center;   
+}
+#mybutton{
+    font-size:100px;
+    padding: 10px 30px;
+    border-radius:8px;
+}
+#mybutton:hover{
+    background-color:rgb(187, 197, 187);
+}
+#mybutton:active{
+    background-color:rgb(175, 178, 175);
+
+}
+#mylabel{
+     font-size:100px;
+}

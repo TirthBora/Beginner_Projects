@@ -1,0 +1,78 @@
+/* style.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: monospace,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1#H1 {
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
+
+#container {
+  background-color: white;
+  padding: 40px 60px;
+  border-radius: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  border:solid #8f8f8f 3px;
+}
+
+#display {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+#controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#start{
+    background-color: rgb(24, 211, 20);
+}
+#start:hover{
+    background-color:rgb(10, 232, 103);
+}
+#start:active{
+     background-color:rgb(9, 146, 57);
+}
+#stop{
+    background-color: rgb(255, 51, 15);
+}
+#stop:hover{
+    background-color:rgb(214, 22, 18);
+}
+#stop:active{
+     background-color:rgb(255, 73, 73);
+}
+#reset{
+    background-color: rgb(87, 156, 235);
+}
+#reset:hover{
+    background-color:rgb(49, 117, 189);
+}
+#reset:active{
+     background-color:rgb(84, 141, 221);
+}

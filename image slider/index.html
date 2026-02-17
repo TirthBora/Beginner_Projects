@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="slider-container">
+      <div class="slider-wrapper">
+        <div class="slider" id="slider">
+          <div class="slide">
+            <img src="image1.jpeg" alt="Image 1" />
+            <div class="slide-number">1 / 5</div>
+          </div>
+          <div class="slide">
+            <img src="image2.jpeg" alt="Image 2" />
+            <div class="slide-number">2 / 5</div>
+          </div>
+          <div class="slide">
+            <img src="image3.jpeg" alt="Image 3" />
+            <div class="slide-number">3 / 5</div>
+          </div>
+          <div class="slide">
+            <img src="image4.jpeg" alt="Image 4" />
+            <div class="slide-number">4 / 5</div>
+          </div>
+          <div class="slide">
+            <img src="image5.jpeg" alt="Image 5" />
+            <div class="slide-number">5 / 5</div>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button class="prev-btn" onclick="prevSlide()">❮</button>
+          <button class="next-btn" onclick="nextSlide()">❯</button>
+        </div>
+      </div>
+
+      <div class="dots-container" id="dotsContainer"></div>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+body{
+    text-align: center;
+}
+#mytext {
+  font-size: 23px;
+  text-align: center;
+  background-color: rgb(222, 241, 241);
+  color: rgb(0, 0, 0);
+}
+#mysubmit {
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 12px;
+  text-align: center;
+  background-color: beige;
+  color: black;
+  transition: background-color 0.3s;
+  
+}
+#mysubmit:hover{
+    background-color: rgb(192, 211, 205);
+    cursor: pointer;
+}
+#mysubmit:active{
+    background-color: bisque;
+}
+#resultElement
+{
+    text-align: center;
+    color:red;
+    font-size: 20px;
+}

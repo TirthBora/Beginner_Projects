@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin:10px 10px;
+}
+
+h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+#choices {
+    display: flex;
+    gap: 20px;
+    
+}
+
+#choices button {
+    font-size: 4rem;
+    width: 120px;
+    height: 120px;
+    border: none;
+    border-radius: 20px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#choices button:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+#choices button:active {
+    transform: translateY(-5px) scale(1.02);
+}
+
+#playerdisplay,
+#computerdisplay,
+#resultdisplay {
+    background: white;
+    padding: 20px 40px;
+    border-radius: 15px;
+    margin: 10px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    min-width: 300px;
+}
+
+#playerdisplay {
+    color: #667eea;
+}
+
+#computerdisplay {
+    color: #764ba2;
+}
+
+#resultdisplay {
+    color: #f093fb;
+    font-size: 1.85rem;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    margin-top: 15px;
+    margin-bottom:20px;
+}
+
+.greentext {
+    background: #28a745 !important;
+    color: white !important;
+}
+
+.redtext {
+    background: #dc3545 !important;
+    color: white !important;
+}
+
+.scoredisplay {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#playerscore,
+#computerscore {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 15px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;;
+}
+
+#playerscore {
+    color: #667eea;
+}
+
+#computerscore {
+    color: #764ba2;
+}
+
+#playerscorevalue,
+#computerscorevalue {
+    font-size: 2rem;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    #choices button {
+        width: 90px;
+        height: 90px;
+        font-size: 3rem;
+    }
+    
+    #playerdisplay,
+    #computerdisplay,
+    #resultdisplay {
+        font-size: 1.2rem;
+        min-width: 200px;
+        padding: 15px 15px;
+    }
+    
+    #resultdisplay {
+        font-size: 1.5rem;
+    }
+    
+    .scoredisplay {
+        gap: 15px;
+    }
+    
+    #playerscore{
+
+         font-size: 1.1rem;
+        padding: 15px 20px;
+    }
+    #computerscore {
+         
+        font-size: 1.1rem;
+        padding: 15px 20px;
+    }
+    
+    #playerscorevalue{
+    
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+    
+    #computerscorevalue {
+    
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+}
